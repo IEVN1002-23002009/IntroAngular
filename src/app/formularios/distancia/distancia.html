@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <form action="">
+                        <div class="form-group pt-4">
+                            <label for="puntoX1">puntoX1: </label>
+                            <input [(ngModel)]="puntoX1" type="text" name="puntoX1" class="form-control" id="puntoX1" aria-placeholder="Ingrese el primer numero">
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="puntoY1">puntoY1: </label>
+                            <input [(ngModel)]="puntoY1" type="text" name="puntoY1" class="form-control" id="puntoY1" aria-placeholder="Ingrese el primer numero">
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="puntoX2">puntoX2: </label>
+                            <input [(ngModel)]="puntoX2" type="text" name="puntoX2" class="form-control" id="puntoX2" aria-placeholder="Ingrese el primer numero">
+                        </div>
+                        <br>
+                        <div class="form-group pt-4">
+                            <label for="puntoY2">puntoY2: </label>
+                            <input [(ngModel)]="puntoY2" type="text" name="puntoY2" class="form-control" id="puntoY2" aria-placeholder="Ingrese el primer numero">
+                        </div>
+                        <br>
+                        <button (click)="calcular()" type="button" class="btn btn-primary">Calcular</button>
+                    </form>
+                </div>
+                <div class="col-6">
+                <h3>Resultado: {{resultado}}</h3> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
